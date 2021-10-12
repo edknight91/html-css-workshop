@@ -1,0 +1,218 @@
+/* Elements */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    font-family: 'Noto Sans Display', sans-serif;
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+}
+
+header {
+    width: 100%;
+    background-color: rgba(255, 255, 255, .8);
+    display: flex;
+    z-index: 10;
+}
+
+footer {
+    margin-top: auto;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+
+}
+
+body {
+    color: white;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    color: rgb(80, 145, 241);
+    display: inline-block;
+}
+
+ul a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    padding: 20px 20px;
+}
+
+ul a:hover {
+    background-color: rgb(255, 255, 255);
+}
+
+/* Text Styles */
+
+h1 {
+    padding-top: 20px;
+    color: white;
+    font-size: 1.8rem;
+    max-width: 600px;
+    margin: 0 auto;
+    font-weight: 600;
+}
+
+h2 {
+    color: #5f7663;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+h4 {
+    padding: 10px 10px;
+}
+
+p {
+    padding-top: 10px;
+    letter-spacing: .5px;
+    color: black;
+}
+
+hr {
+    height: 3px;
+    width: 100%;
+    background-color: #5f7663;
+    margin-top: 20px;
+}
+
+sub {
+    color: #223344;
+    margin: 10px 10px;
+}
+
+/* Classes */
+
+.logo-text {
+    color: #5f7663;
+}
+
+.hero-banner {
+    width: 100%;
+    height: 400px;
+    background-image: url(/images/Grizzly-bear-banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.internal-banner {
+    width: 100%;
+    height: 300px;
+    background-image: url(/images/Grizzly-bear-banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+.internal-banner-text {
+    color: white;
+    text-shadow: black;
+    background-color: #5f7663;
+    padding: 20px;
+}
+
+.nav-bar {
+    width: 100%;
+    margin: 5px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo {
+    margin-right: auto;
+}
+
+.nav-item {
+    flex-direction: row;
+    flex-grow: 1;
+}
+
+.intro {
+    width: 100%;
+    background-color: #5f7663;
+    text-align: center;
+}
+
+.intro-text {
+    color: white;
+    padding: 20px 50px;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 600px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    overflow: auto;
+    width: 300px;
+    background-color: #5f7663;
+    margin: 10px;
+    text-align: center;
+    padding: 10px 10px;
+    border-radius: 10px;
+}
+
+.card p {
+    color: white;
+}
+
+.section {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.two-column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 30px;
+}
+
+.item-1 {
+    flex-grow: 3;
+    margin-bottom: 20px;
+}
+
+.item-2 {
+    background-color: #5f7663;
+    flex-grow: 1;
+    min-height: 100px;
+    border-radius: 10px;
+    position: fixed;
+}
+
+/* Media Queries*/
+
+
+
+@media (min-width: 800px) {
+
+    .two-column {
+        flex-direction: row;
+    }
+}
